@@ -4,7 +4,7 @@ Programmer,IT Student
 
 
 <h2>👨‍💻 Software Development Projects:</h2>
- [Directory Home Lab](https://github.com/jason-kamina/LABURL)
+ [Directory Home Lab](https://https://github.com/jason-kmn?tab=projects)
 
 
 
