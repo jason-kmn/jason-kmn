@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#2196F3"
+    android:layout_marginBottom="30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview_request"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:cardBackgroundColor="#9CD6DD"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="300dp"
+        android:shape="ring">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:id="@+id/sender_profile_pic"
+            android:scaleType="centerCrop"
+            android:background="@drawable/no_profile_pic"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/chosen_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardview_request"
+        android:text="What Date:"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/chosen_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardview_request"
+        android:layout_below="@id/chosen_date"
+        android:text="What Time:"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/sender_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardview_request"
+        android:layout_below="@id/chosen_hour"
+        android:text="Sender:"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/actual_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardview_request"
+        android:layout_below="@id/sender_name"
+        android:text="Random name of ad with long text"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/which_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardview_request"
+        android:layout_below="@id/actual_name"
+        android:text="Interested for: "
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/this_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/cardview_request"
+        android:layout_below="@id/which_request"
+        android:text="Random name of ad to see text"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:inputType="textMultiLine"
+        android:textColor="@color/black"
+        android:layout_marginLeft="8dp"/>
+
+</RelativeLayout>

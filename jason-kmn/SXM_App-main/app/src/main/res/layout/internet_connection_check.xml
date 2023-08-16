@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9CD6DD"
+    android:gravity="center"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/wifi_off"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Something went wrong!"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No internet connection!"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/black"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:textAllCaps="true"
+        android:text="Retry"/>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray"
+    tools:context=".RequestDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/who_sent_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="User username1 sent you an offer. Please enter the Accept button if you want to make an appointment with them, otherwise press the Decline button "
+            android:textColor="#9CD6DD"
+            android:textSize="16sp"
+            android:gravity="center"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/request_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="This is a title"
+            android:textColor="#9CD6DD"
+            android:textSize="20sp"
+            android:gravity="center"
+            tools:ignore="TextContrastCheck"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/request_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="380dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/request_category"/>
+
+        <TextView
+            android:id="@+id/request_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textMultiLine"
+            android:text="Category: "
+            android:textColor="#9CD6DD"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/request_price"/>
+
+        <TextView
+            android:id="@+id/request_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="20dp"
+            android:inputType="textMultiLine"
+            android:text="Price: "
+            android:textColor="#9CD6DD"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toTopOf="@+id/request_description"/>
+
+        <TextView
+            android:id="@+id/request_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="50dp"
+            android:inputType="textMultiLine"
+            android:text="Description: "
+            android:textColor="#9CD6DD"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@id/accept_button" />
+
+
+        <Button
+            android:id="@+id/accept_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#060871"
+            android:text="Accept"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/decline_button"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+        <Button
+            android:id="@+id/decline_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#DF0B0B"
+            android:text="Decline"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@+id/request_button"
+            app:layout_constraintLeft_toLeftOf="parent" />
+
+    </LinearLayout>
+
+</ScrollView>
