@@ -3,8 +3,7 @@ Programmer,IT Student
 
 
 
-<h2>👨‍💻 Software Development Projects:</h2>
- [Directory Home Lab](https://https://github.com/jason-kmn?tab=projects)
+
 
 
 
