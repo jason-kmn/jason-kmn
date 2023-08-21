@@ -12,4 +12,4 @@ Programmer,IT Student
 <h2>Connect with me:</h2>
 
 [Email] -> kaminas.jason@gmail.com
-[LinkedIn] ->
+[LinkedIn] -> https://www.linkedin.com/in/jason-kaminas-061026289
